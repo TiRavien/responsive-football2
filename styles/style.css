@@ -1,0 +1,96 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+.banner{
+    color: #FFFFFF;
+    background-color: #562EFF;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    width: 50%;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    transform: translate();
+}
+button{
+    color: white;
+    background-image: linear-gradient(violet, red);
+    padding: 10px 20px;
+}
+section{
+    display: flex;
+}
+.half-width{
+    width: 50%;
+    padding: 15px 20px;
+}
+.half-width img{
+    width: 100%;
+}
+/* football players style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    top: 15px;
+    left: 15px;
+}
+.player{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 20px 15px 20px;
+    padding: 10px 20px 15px 20px;
+    box-shadow:10px 10px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 250px;
+    height: 250px;
+}
+footer{
+    text-align: center;
+}
+/* ---------------
+   Media Queries 
+------------------*/
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    section{
+        flex-wrap: wrap;
+        display: block;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    .players{
+        display: block;
+    }
+    footer img{
+        width: 100%;
+    }
+}
